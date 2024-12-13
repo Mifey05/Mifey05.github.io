@@ -10,28 +10,28 @@ $color-scheme-dark: false !default;
 // Light mode
 // ----------
 
-$lm-brand-color:           #6a0dad !default;
-$lm-brand-color-light:     lighten($lm-brand-color, 40%) !default;
-$lm-brand-color-dark:      darken($lm-brand-color, 25%) !default;
+$lm-brand-color:           #9b4dca !default; // Softer purple
+$lm-brand-color-light:     lighten($lm-brand-color, 50%) !default; // Lighter shade for accents
+$lm-brand-color-dark:      darken($lm-brand-color, 20%) !default; // Darker shade for contrast
 
 $lm-site-title-color:      $lm-brand-color-dark !default;
 
-$lm-text-color:            #4b0082 !default;
-$lm-background-color:      #f5f0f6 !default;
-$lm-code-background-color: #e0c9f0 !default;
+$lm-text-color:            #3f0071 !default; // Darker text color for better readability
+$lm-background-color:      #f7e5ff !default; // Light, warm background to complement purple
+$lm-code-background-color: #e0c9f0 !default; // Soft background for code blocks
 
-$lm-link-base-color:       #9b30ff !default;
-$lm-link-visited-color:    darken($lm-link-base-color, 15%) !default;
+$lm-link-base-color:       #8a2be2 !default; // Light purple for links
+$lm-link-visited-color:    darken($lm-link-base-color, 10%) !default;
 $lm-link-hover-color:      $lm-text-color !default;
 
-$lm-border-color-01:       #800080 !default;
-$lm-border-color-02:       lighten($lm-brand-color, 35%) !default;
+$lm-border-color-01:       #7a0088 !default; // Slightly darker border for definition
+$lm-border-color-02:       lighten($lm-brand-color, 40%) !default;
 $lm-border-color-03:       $lm-brand-color-dark !default;
 
-$lm-table-text-color:      lighten($lm-text-color, 18%) !default;
-$lm-table-zebra-color:     lighten($lm-brand-color, 46%) !default;
-$lm-table-header-bg-color: lighten($lm-brand-color, 43%) !default;
-$lm-table-header-border:   lighten($lm-brand-color, 37%) !default;
+$lm-table-text-color:      lighten($lm-text-color, 10%) !default;
+$lm-table-zebra-color:     lighten($lm-brand-color, 60%) !default;
+$lm-table-header-bg-color: lighten($lm-brand-color, 50%) !default;
+$lm-table-header-border:   lighten($lm-brand-color, 30%) !default;
 $lm-table-border-color:    $lm-border-color-01 !default;
 
 
@@ -106,21 +106,21 @@ $lm-table-border-color:    $lm-border-color-01 !default;
 // Dark mode
 // ---------
 
-$dm-brand-color:           #9b30ff !default;
-$dm-brand-color-light:     lighten($dm-brand-color, 5%) !default;
-$dm-brand-color-dark:      darken($dm-brand-color, 35%) !default;
+$dm-brand-color:           #9b4dca !default; // Softer purple for dark mode
+$dm-brand-color-light:     lighten($dm-brand-color, 10%) !default;
+$dm-brand-color-dark:      darken($dm-brand-color, 25%) !default;
 
 $dm-site-title-color:      $dm-brand-color-light !default;
 
-$dm-text-color:            #e9d8a6 !default;
-$dm-background-color:      #2a0a3b !default;
-$dm-code-background-color: #3c1d5a !default;
+$dm-text-color:            #f0d1ff !default; // Light text color for contrast on dark background
+$dm-background-color:      #2a0a3b !default; // Darker background to highlight the purple tones
+$dm-code-background-color: #3c1d5a !default; // Soft code block background
 
-$dm-link-base-color:       #9b30ff !default;
+$dm-link-base-color:       #8a2be2 !default;
 $dm-link-visited-color:    $dm-link-base-color !default;
 $dm-link-hover-color:      $dm-text-color !default;
 
-$dm-border-color-01:       #800080 !default;
+$dm-border-color-01:       #7a0088 !default;
 $dm-border-color-02:       $dm-brand-color-light !default;
 $dm-border-color-03:       $dm-brand-color !default;
 
