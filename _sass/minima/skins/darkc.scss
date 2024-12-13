@@ -2,4 +2,9 @@
 
 $color-scheme-auto: false;
 $color-scheme-dark: true;
+
+$primary-color: #8a2be2;
+$link-color: $primary-color;
+$highlight-color: $primary-color;
+
 @import "minima/skins/custom";
