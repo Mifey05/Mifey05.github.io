@@ -106,22 +106,22 @@ $lm-table-border-color:    $lm-border-color-01 !default;
 // Dark mode
 // ---------
 
-$dm-brand-color:           #9b4dca !default; // Softer purple for dark mode
-$dm-brand-color-light:     lighten($dm-brand-color, 10%) !default;
-$dm-brand-color-dark:      darken($dm-brand-color, 25%) !default;
+$dm-brand-color:           #7289da !default; // Accent purple color
+$dm-brand-color-light:     lighten($dm-brand-color, 5%) !default;
+$dm-brand-color-dark:      darken($dm-brand-color, 35%) !default;
 
 $dm-site-title-color:      $dm-brand-color-light !default;
 
-$dm-text-color:            #f0d1ff !default; // Light text color for contrast on dark background
-$dm-background-color:      #2a0a3b !default; // Darker background to highlight the purple tones
-$dm-code-background-color: #3c1d5a !default; // Soft code block background
+$dm-text-color:            #dcddde !default; // Light gray text
+$dm-background-color:      #18191c !default; // Dark background color
+$dm-code-background-color: #2f3136 !default; // Darker background for code blocks
 
-$dm-link-base-color:       #8a2be2 !default;
-$dm-link-visited-color:    $dm-link-base-color !default;
-$dm-link-hover-color:      $dm-text-color !default;
+$dm-link-base-color:       #8e99a3 !default; // Link color
+$dm-link-visited-color:    darken($dm-link-base-color, 15%) !default;
+$dm-link-hover-color:      #99aab5 !default; // Hover effect for links
 
-$dm-border-color-01:       #7a0088 !default;
-$dm-border-color-02:       $dm-brand-color-light !default;
+$dm-border-color-01:       #2c2f36 !default; // Dark border color
+$dm-border-color-02:       lighten($dm-brand-color, 5%) !default;
 $dm-border-color-03:       $dm-brand-color !default;
 
 $dm-table-text-color:      $dm-text-color !default;
@@ -142,7 +142,7 @@ $dm-table-border-color:    $dm-border-color-01 !default;
   .highlight {
     .c     { color: #545454; font-style: italic } // Comment
     .err   { color: #f07178; background-color: #e3d2d2 } // Error
-    .k     { color: #800080; font-weight: bold } // Keyword
+    .k     { color: #7289da; font-weight: bold } // Keyword
     .o     { font-weight: bold } // Operator
     .cm    { color: #545454; font-style: italic } // Comment.Multiline
     .cp    { color: #545454; font-weight: bold } // Comment.Preproc
@@ -166,12 +166,12 @@ $dm-table-border-color:    $dm-border-color-01 !default;
     .kr    { font-weight: bold } // Keyword.Reserved
     .kt    { color: #FFCB6B; font-weight: bold } // Keyword.Type
     .m     { color: #F78C6C } // Literal.Number
-    .s     { color: #9b30ff } // Literal.String
+    .s     { color: #7289da } // Literal.String
     .na    { color: #008080 } // Name.Attribute
     .nb    { color: #EEFFFF } // Name.Builtin
     .nc    { color: #FFCB6B; font-weight: bold } // Name.Class
     .no    { color: #008080 } // Name.Constant
-    .ni    { color: #800080 } // Name.Entity
+    .ni    { color: #7289da } // Name.Entity
     .ne    { color: #900; font-weight: bold } // Name.Exception
     .nf    { color: #82AAFF; font-weight: bold } // Name.Function
     .nn    { color: #555 } // Name.Namespace
@@ -240,29 +240,29 @@ $table-border-color: $lm-table-border-color;
   // Auto mode
 
   :root {
-    --minima-brand-color: #{$lm-brand-color};
-    --minima-brand-color-light: #{$lm-brand-color-light};
-    --minima-brand-color-dark: #{$lm-brand-color-dark};
+    --minima-brand-color: #{$dm-brand-color};
+    --minima-brand-color-light: #{$dm-brand-color-light};
+    --minima-brand-color-dark: #{$dm-brand-color-dark};
 
-    --minima-site-title-color: #{$lm-site-title-color};
+    --minima-site-title-color: #{$dm-site-title-color};
 
-    --minima-text-color: #{$lm-text-color};
-    --minima-background-color: #{$lm-background-color};
-    --minima-code-background-color: #{$lm-code-background-color};
+    --minima-text-color: #{$dm-text-color};
+    --minima-background-color: #{$dm-background-color};
+    --minima-code-background-color: #{$dm-code-background-color};
 
-    --minima-link-base-color: #{$lm-link-base-color};
-    --minima-link-visited-color: #{$lm-link-visited-color};
-    --minima-link-hover-color: #{$lm-link-hover-color};
+    --minima-link-base-color: #{$dm-link-base-color};
+    --minima-link-visited-color: #{$dm-link-visited-color};
+    --minima-link-hover-color: #{$dm-link-hover-color};
 
-    --minima-border-color-01: #{$lm-border-color-01};
-    --minima-border-color-02: #{$lm-border-color-02};
-    --minima-border-color-03: #{$lm-border-color-03};
+    --minima-border-color-01: #{$dm-border-color-01};
+    --minima-border-color-02: #{$dm-border-color-02};
+    --minima-border-color-03: #{$dm-border-color-03};
 
-    --minima-table-text-color: #{$lm-table-text-color};
-    --minima-table-zebra-color: #{$lm-table-zebra-color};
-    --minima-table-header-bg-color: #{$lm-table-header-bg-color};
-    --minima-table-header-border: #{$lm-table-header-border};
-    --minima-table-border-color: #{$lm-table-border-color};
+    --minima-table-text-color: #{$dm-table-text-color};
+    --minima-table-zebra-color: #{$dm-table-zebra-color};
+    --minima-table-header-bg-color: #{$dm-table-header-bg-color};
+    --minima-table-header-border: #{$dm-table-header-border};
+    --minima-table-border-color: #{$dm-table-border-color};
   }
 
   @include lm-highlight;
