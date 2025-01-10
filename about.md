@@ -1,18 +1,12 @@
 ---
 layout: page
-title: About
+title: Profile
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This is the Porto page for Mifey05, containing the most random of random.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+You can find me at [Github](https://github.com/Mifey05)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+[ProfilePic](/assets/img/pfp.png)
+```Expect the unexpected :)```
